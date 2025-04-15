@@ -20,4 +20,9 @@ public class Aluno {
     private String cpf;
 
     private String email;
+
+    public Long getId() {
+        return this.id;
+    }
+
 }
