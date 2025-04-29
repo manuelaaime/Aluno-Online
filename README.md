@@ -30,5 +30,5 @@ Captura de tela mostrando a tabela Professor funcionando
 Captura de tela mostrando a requisição listarTodasDisciplinas funcionando 
 [Captura de tela mostrando a requisição listarTodasDisciplinas funcionando](src/assets/listarTodasDisciplinas.png)
 Captura de tela mostrando a tabela Disciplina funcionando 
-[Captura de tela mostrando a tabela pDisciplina funcionando](src/assets/disciplinassNoBanco.png)
+[Captura de tela mostrando a tabela Disciplina funcionando](src/assets/disciplinasNoBanco.png)
 
