@@ -12,7 +12,7 @@ Este projeto tem como objetivo o desenvolvimento de uma aplicação completa uti
 Captura de tela mostrando o Banco de Dados conectado
 ![Captura de tela mostrando o Banco de Dados conectado](src/assets/bancoCriado.png)
 Captura de tela mostrando a requisição criarAluno funcionando
-![Captura de tela mostrando a requisição HTTP POST e o JSON funcionando](/src/assets/criarAluno.png)
+![Captura de tela mostrando a requisição criarAluno funcionando](/src/assets/criarAluno.png)
 Captura de tela mostrando a requisição listarTodosAlunos funcionando 
 ![Captura de tela mostrando a requisição listarTodosAlunos funcionando](src/assets/listarTodosAlunos.png)
 Captura de tela mostrando a requisição buscarAlunoPorId funcionando
@@ -21,6 +21,8 @@ Captura de tela mostrando o banco funcionando
 ![Captura de tela mostrando o banco funcionando](src/assets/bancoCriado.png)
 Captura de tela mostrando a requisição deletarAlunoPorId funcionando 
 [Captura de tela mostrando a requisição deletarAlunoPorId funcionando](src/assets/deletarALunoPorId.png)
+Captura de tela mostrando o aluno deletado 
+[Captura de tela mostrando o aluno deletado](src/assets/alunoDeletado.png)
 Captura de tela mostrando o aluno deletado 
 [Captura de tela mostrando o aluno deletado](src/assets/alunoDeletado.png)
 
