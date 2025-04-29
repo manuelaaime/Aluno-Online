@@ -10,7 +10,7 @@ Este projeto tem como objetivo o desenvolvimento de uma aplicação completa uti
 [![Insomnia](https://img.shields.io/badge/Insomnia-4000BF?style=for-the-badge&logo=insomnia&logoColor=white)](https://insomnia.rest)
 
 Captura de tela mostrando o Banco de Dados conectado
-![Captura de tela mostrando o Banco de Dados conectado](src/assets/Captura%20de%20tela%202025-04-07%20195213.png)
+![Captura de tela mostrando o Banco de Dados conectado](src/assets/bancoCriado.png)
 Captura de tela mostrando a requisição HTTP POST e o JSON funcionando
 ![Captura de tela mostrando a requisição HTTP POST e o JSON funcionando](/src/assets/Captura%20de%20tela%202025-04-07%20195415.png)
 Captura de tela mostrando a requisição listarTodosAlunos funcionando 
