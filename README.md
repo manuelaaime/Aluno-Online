@@ -20,15 +20,15 @@ Captura de tela mostrando a requisição buscarAlunoPorId funcionando
 Captura de tela mostrando o banco funcionando
 ![Captura de tela mostrando o banco funcionando](src/assets/bancoCriado.png)
 Captura de tela mostrando a requisição deletarAlunoPorId funcionando 
-[Captura de tela mostrando a requisição deletarAlunoPorId funcionando](src/assets/deletarALunoPorId.png)
+![Captura de tela mostrando a requisição deletarAlunoPorId funcionando](src/assets/deletarALunoPorId.png)
 Captura de tela mostrando o aluno deletado 
-[Captura de tela mostrando o aluno deletado](src/assets/alunoDeletado.png)
+![Captura de tela mostrando o aluno deletado](src/assets/alunoDeletado.png)
 Captura de tela mostrando a requisição listarTodosProfesores funcionando 
-[Captura de tela mostrando a requisição listarTodosProfesores funcionandoo](src/assets/listarTodosProfesores.png)
+![Captura de tela mostrando a requisição listarTodosProfesores funcionando](src/assets/listarTodosProfessores.png)
 Captura de tela mostrando a tabela Professor funcionando 
-[Captura de tela mostrando a tabela professor funcionando](src/assets/professoresNoBanco.png)
+![Captura de tela mostrando a tabela professor funcionando](src/assets/professoresNoBanco.png)
 Captura de tela mostrando a requisição listarTodasDisciplinas funcionando 
-[Captura de tela mostrando a requisição listarTodasDisciplinas funcionando](src/assets/listarTodasDisciplinas.png)
-Captura de tela mostrando a tabela Disciplina funcionando 
-[Captura de tela mostrando a tabela Disciplina funcionando](src/assets/disciplinasNoBanco.png)
+![Captura de tela mostrando a requisição listarTodasDisciplinas funcionando](src/assets/listarTodasDisciplinas.png)
+Captura de tela mostrando a tabela Disciplina funcionando
+![Captura de tela mostrando a tabela Disciplina funcionando](src/assets/disciplinasNoBanco.png)
 
