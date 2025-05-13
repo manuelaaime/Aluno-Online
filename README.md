@@ -31,4 +31,10 @@ Captura de tela mostrando a requisição listarTodasDisciplinas funcionando
 ![Captura de tela mostrando a requisição listarTodasDisciplinas funcionando](src/assets/listarTodasDisciplinas.png)
 Captura de tela mostrando a tabela Disciplina funcionando
 ![Captura de tela mostrando a tabela Disciplina funcionando](src/assets/disciplinasNoBanco.png)
+Captura de tela mostrando a Documentação no Swagger 
+![Captura de tela mostrando a Documentação no Swagger](src/assets/documentacaoSwagger.png)
+Captura de tela mostrando a requisição trancarMatricula funcionando
+![Captura de tela mostrando a requisição trancarMatricula funcionando](src/assets/trancarMatricula.png)
+Captura de tela mostrando trancarMatricula no Banco de Dados
+![Captura de tela mostrando trancarMatricula no Banco de Dados](src/assets/alunoTrancado.png)
 
