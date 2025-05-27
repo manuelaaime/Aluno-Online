@@ -46,4 +46,8 @@ public class DisciplinaService {
         disciplinaParaEditar.setCargaHoraria(disciplina.getCargaHoraria());
         disciplinaParaEditar.setProfessor(disciplina.getProfessor());
     }
+
+    public List<Disciplina> listarDisciplinasDoProf (Long professorId){
+        return disciplinaRepository.findByProfessorId(professorId);
+    }
 }

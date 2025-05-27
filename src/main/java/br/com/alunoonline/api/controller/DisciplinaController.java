@@ -45,4 +45,10 @@ public class DisciplinaController {
     public void atualizarDisciplinaPorId(@PathVariable Long id, @RequestBody Disciplina disciplina){
         disciplinaService.atualizarDisciplinaPorId(id, disciplina);
     }
+
+    @GetMapping("/professor/{professorId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Disciplina> listarDisciplinasDoProf( Long professorId){
+        return disciplinaService.listarDisciplinasDoProf(professorId);
+    }
 }
