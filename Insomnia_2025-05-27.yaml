@@ -1,0 +1,517 @@
+type: collection.insomnia.rest/5.0
+name: Aluno Online Sala
+meta:
+  id: wrk_f72ec70198174315b058919eb1eb2c90
+  created: 1742946583719
+  modified: 1742946583719
+collection:
+  - name: Aluno
+    meta:
+      id: fld_3811a0500c3f4b3482212382eb5bf07a
+      created: 1742946740689
+      modified: 1745363451349
+      sortKey: -1742946740689
+    children:
+      - url: "{{ _.baseURL }}/alunos"
+        name: criarAluno
+        meta:
+          id: req_6460df567ab04a6ab2e90a6c1b694335
+          created: 1742946743886
+          modified: 1748375893640
+          isPrivate: false
+          sortKey: -1742946743886
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            
+            {
+            	"nome": "{% faker 'randomFullName' %}", 
+            	"cpf": "123.123.123-45",
+            	"email": "{% faker 'randomEmail' %}"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/alunos"
+        name: listarTodosAlunos
+        meta:
+          id: req_da5946969e20453f98c62746890ef56f
+          created: 1744155220411
+          modified: 1748375922533
+          isPrivate: false
+          sortKey: -1743550982148.5
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/alunos/6"
+        name: buscarAlunoPorId
+        meta:
+          id: req_a841f48158bf4b54b76b78e684959964
+          created: 1744157265857
+          modified: 1748375911981
+          isPrivate: false
+          sortKey: -1743248863017.25
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/alunos/5"
+        name: deletarAlunoPorId
+        meta:
+          id: req_1d83ef4f2cc74e9c8c6352f7583f0c4b
+          created: 1744672210691
+          modified: 1748375941464
+          isPrivate: false
+          sortKey: -1744672210691
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/alunos/9"
+        name: atualizarAlunoPorId
+        meta:
+          id: req_6446d85e0cea4fd68f741fdbc3a0c5d1
+          created: 1744761111344
+          modified: 1748375955374
+          isPrivate: false
+          sortKey: -1744761111344
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+             "nome": "Bruno Henrique",
+             "email": "blue@gmail.com",
+             "cpf": "123.456.789-01"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Professor
+    meta:
+      id: fld_8e21c446c46147afbb24f477dfb1150d
+      created: 1745363473754
+      modified: 1745363477473
+      sortKey: -1745363473754
+    children:
+      - url: "{{ _.baseURL }}/professores"
+        name: criarProfessor
+        meta:
+          id: req_af99f2c2e3924d2a9d8b44c303700cff
+          created: 1745363478922
+          modified: 1748371138041
+          isPrivate: false
+          sortKey: -1745363478922
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "{% faker 'randomFullName' %}", 
+            	"cpf": "123.123.123-18",
+            	"email": "{% faker 'randomEmail' %}"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/professores/2"
+        name: buscarProfessorPorId
+        meta:
+          id: req_4e9e9b95330a404ca5711f927a4661cf
+          created: 1745951725935
+          modified: 1748371907002
+          isPrivate: false
+          sortKey: -1745951725935
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/professores"
+        name: listarTodosProfessores
+        meta:
+          id: req_2228522ea3084d37a85818f5ffa053ea
+          created: 1745951789857
+          modified: 1748371176009
+          isPrivate: false
+          sortKey: -1745951789857
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/professores/2"
+        name: atualizarProfessorPorId
+        meta:
+          id: req_83cbfed4fd9a4492aae6fc6045584ef5
+          created: 1745951832807
+          modified: 1748371791906
+          isPrivate: false
+          sortKey: -1745951832807
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+             "nome": "Raul Lehner III",
+             "email": "Milan.Weimann@yahoo.com",
+             "cpf": "123.123.123-18"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/professores/5"
+        name: deletarProfessorPorId
+        meta:
+          id: req_22916ca0574a44fb9b7547cc95ee8332
+          created: 1745951908783
+          modified: 1748373785397
+          isPrivate: false
+          sortKey: -1745951908783
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Disciplina
+    meta:
+      id: fld_b274b92e05014ff59a5aab1c6714450c
+      created: 1745366074197
+      modified: 1745366074197
+      sortKey: -1745366074197
+    children:
+      - url: "{{ _.baseURL }}/disciplinas"
+        name: cadastrarDisciplina
+        meta:
+          id: req_0660d333c6f9428e986cb405124fbec2
+          created: 1745366083130
+          modified: 1748375115742
+          isPrivate: false
+          sortKey: -1745366083130
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "BancoDeDados", 
+            	"cargaHoraria": 60,
+            	"professor": {
+            		"id": 4
+            	}
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/disciplinas/2"
+        name: buscarDisciplinaPorId
+        meta:
+          id: req_116b660bdc444d2eb5e79a10523ee158
+          created: 1745951992576
+          modified: 1748375176778
+          isPrivate: false
+          sortKey: -1745951992576
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/disciplinas"
+        name: listarTodasDisciplinas
+        meta:
+          id: req_c53973b4b3e74473ac6a49ed0e79590c
+          created: 1745952029352
+          modified: 1745971542731
+          isPrivate: false
+          sortKey: -1745952029352
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/disciplinas/47"
+        name: atualizarDisciplinaPorId
+        meta:
+          id: req_247a164cda4448619baab4b55c5081f2
+          created: 1745952055804
+          modified: 1748378005630
+          isPrivate: false
+          sortKey: -1745952055804
+        method: PUT
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/disciplinas/1"
+        name: deletarDisciplinaPorId
+        meta:
+          id: req_461cc4667cfa472d809914f17fceae5c
+          created: 1745952088777
+          modified: 1748375408851
+          isPrivate: false
+          sortKey: -1745952088777
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/3"
+        name: listarDisciplinasDoProf
+        meta:
+          id: req_ba72d373dac8496ba45784f223d14ac4
+          created: 1747177518686
+          modified: 1748375313619
+          isPrivate: false
+          sortKey: -1747177518686
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: MatriculaAluno
+    meta:
+      id: fld_31f4662df7fa47eb8759a9e6ab82a7d2
+      created: 1745971262742
+      modified: 1745971262742
+      sortKey: -1745971262742
+    children:
+      - url: "{{ _.baseURL }}/matriculas"
+        name: criarMatricula
+        meta:
+          id: req_60ebb608d90942f6b87b794b2fb4a896
+          created: 1745971267006
+          modified: 1748374770990
+          isPrivate: false
+          sortKey: -1745971267006
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"aluno": {
+            		"id": 8
+            	},
+            	"disciplina": {
+            		"id": 3
+            	}
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/matriculas/trancar/1"
+        name: trancarMatricula
+        meta:
+          id: req_86aba332c91d44d18ba830ec1cc762bc
+          created: 1747165270439
+          modified: 1748374788441
+          isPrivate: false
+          sortKey: -1747165270439
+        method: PATCH
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/matriculas/atualizar-notas/3"
+        name: atualizarNotas
+        meta:
+          id: req_8c825566bb4147e9a4662a9e7967e267
+          created: 1747781634666
+          modified: 1748374802306
+          isPrivate: false
+          sortKey: -1747781634666
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nota1": 10,
+            	"nota2": 6.5
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d39600a6f58bf3da74bae54f654a152cb5bb9d0e
+    created: 1742946583745
+    modified: 1742946583745
+environments:
+  name: Ambiente Local
+  meta:
+    id: env_d39600a6f58bf3da74bae54f654a152cb5bb9d0e
+    created: 1742946583734
+    modified: 1744757126448
+    isPrivate: false
+  data:
+    baseURL: http://localhost:8080
