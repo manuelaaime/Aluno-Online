@@ -63,7 +63,7 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 
 ![AtualizarAlunoPorId.png](src/assets/AtualizarAlunoPorId.png)
 
-![DeletarAlunoPorId.png](src/assets/deletarAlunoPorId.png)
+![DeletarAlunoPorId.png](src/assets/deletarALunoPorId.png)
 
 ---
 - CRUD Professor
