@@ -11,39 +11,36 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProfessorService {
 
+public class ProfessorService {
     @Autowired
     ProfessorRepository professorRepository;
 
     public void criarProfessor(Professor professor){
         professorRepository.save(professor);
     }
-
     public List<Professor> listarTodosProfessores(){
-        return professorRepository.findAll();
-    }
-
+        return professorRepository.findAll();}
     public Optional<Professor> buscarProfessorPorId(Long id){
         return professorRepository.findById(id);
     }
-
     public void deletarProfessorPorId(Long id){
         professorRepository.deleteById(id);
     }
-
     public void atualizarProfessorPorId(Long id, Professor professor){
+
         Optional<Professor> professorDoBancoDeDados = buscarProfessorPorId(id);
 
-        if (professorDoBancoDeDados.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND,
-                    "Professor não encontrado no Banco de Dados");
+        if (professorDoBancoDeDados.isEmpty()){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Professor não encontrado no Banco de Dados.");
         }
+
         Professor professorParaEditar = professorDoBancoDeDados.get();
 
         professorParaEditar.setNome(professor.getNome());
         professorParaEditar.setCpf(professor.getCpf());
         professorParaEditar.setEmail(professor.getEmail());
-        }
-    }
 
+        professorRepository.save(professorParaEditar);
+    }
+}
