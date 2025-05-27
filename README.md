@@ -55,22 +55,22 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 
 - CRUD Aluno
 
-![CriarAluno.png](src/assets/CriarAluno.png)
+![CriarAluno.png](src/assets/criarAluno.png)
 
-![ListarTodosAlunos.png](src/assets/ListarTodosAlunos.png)
+![ListarTodosAlunos.png](src/assets/listarTodosAlunos.png)
 
 ![BuscarAlunoPorId.png](src/assets/BuscarAlunoPorId.png)
 
 ![AtualizarAlunoPorId.png](src/assets/AtualizarAlunoPorId.png)
 
-![DeletarAlunoPorId.png](src/assets/DeletarAlunoPorId.png)
+![DeletarAlunoPorId.png](src/assets/deletarAlunoPorId.png)
 
 ---
 - CRUD Professor
 
 ![CriarProfessor.png](src/assets/CriarProfessor.png)
 
-![ListarTodosProfessores.png](src/assets/ListarTodosProfessores.png)
+![ListarTodosProfessores.png](src/assets/listarTodosProfessores.png)
 
 ![BuscarProfessorPorId.png](src/assets/BuscarProfessorPorId.png)
 
@@ -83,7 +83,7 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 
 ![CadastrarDisciplina.png](src/assets/CadastrarDisciplina.png)
 
-![ListarTodasDisciplinas.png](src/assets/ListarTodasDisciplinas.png)
+![ListarTodasDisciplinas.png](src/assets/listarTodasDisciplinas.png)
 
 
 ![BuscarDisciplinaPorId.png](src/assets/BuscarDisciplinaPorId.png)
@@ -94,7 +94,7 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 
 ![CriarMatricula.png](src/assets/CriarMatricula.png)
 
-![TrancarMatricula.png](src/assets/TrancarMatricula.png)
+![TrancarMatricula.png](src/assets/trancarMatricula.png)
 
 ![AtualizarNotas.png](src/assets/AtualizarNotas.png)
 
@@ -105,12 +105,19 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 > Visualização das tabelas e relacionamentos no banco de dados PostgreSQL:
 
 - Tabela `aluno`
+  
 ![Captura de tela Tabela Aluno](src/assets/TabelaAluno.png)
+
 - Tabela `professor`
+  
 ![Captura de tela Tabela Professor](src/assets/TabelaProfessor.png)
+
 - Tabela `disciplina`
+  
 ![Captura de tela Tabela Disciplina](src/assets/TabelaDisciplina.png)
+
 - Tabela `matricula_aluno`
+  
 ![Captura de tela TabelaMatriculaAluno](src/assets/TabelaMatriculaAluno.png)
 
 
