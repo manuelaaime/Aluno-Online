@@ -9,10 +9,9 @@
 ## 📖 Sumário
 
 - [📚 Sobre](#-sobre)
-- [🚀 Tecnologias e Ferramentas](#-tecnologias-e-ferramentas)
-- [🧪 Testes e Prints](#-testes-e-prints)
+- [🚀 Tecnologias e Ferramentas utilizadas](#-tecnologias-e-ferramentas-utilizadas)
+- [🖼️ Prints](#-prints)
 - [📘 Documentação Swagger](#-documentação-swagger)
-- [👩‍💻 Autora](#-autora)
 
 ---
 
@@ -30,7 +29,13 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 
 ---
 
+### ✅ Pré-requisitos
 
+- Java 17
+- PostgreSQL
+- Maven
+
+--- 
 ## 🚀 Tecnologias e Ferramentas utilizadas
 
 ![JAVA](https://img.shields.io/badge/-JAVA-007396?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -42,20 +47,6 @@ O projeto tem como objetivo aplicar os conceitos de **APIs RESTful** para constr
 
 ---
 
-
-### ✅ Pré-requisitos
-
-- Java 17
-- PostgreSQL
-- Maven
-
-### 🧩 Clonando o projeto
-
-```bash
-git clone https://github.com/manuelaaime/Aluno-Online.git
-cd Aluno-Online
-
-
 ## 🖼️ Prints
 
 ### 📬 Insomnia: Endpoints
@@ -63,77 +54,50 @@ cd Aluno-Online
 > Testes realizados via Insomnia para simular requisições REST aos seguintes recursos:
 
 - CRUD Aluno
-![Captura de tela da requisição criarAluno]
-(/src/assets/CriarAluno.png)
 
-Captura de tela da requisição listarTodosAlunos 
-![Captura de tela da requisição listarTodosAlunos]
-(src/assets/ListarTodosAlunos.png)
+![CriarAluno.png](src/assets/CriarAluno.png)
 
-Captura de tela da requisição buscarAlunoPorId
-![Captura de tela da requisição buscarAlunoPorId]
-(src/assetsBuscarAlunoPorid.png)
+![ListarTodosAlunos.png](src/assets/ListarTodosAlunos.png)
 
-Captura de tela da requisição deletarAlunoPorId 
-![Captura de tela da requisição deletarAlunoPorId]
-(src/assets/DeletarAlunoPorId.png)
+![BuscarAlunoPorId.png](src/assets/BuscarAlunoPorId.png)
 
+![AtualizarAlunoPorId.png](src/assets/AtualizarAlunoPorId.png)
 
+![DeletarAlunoPorId.png](src/assets/DeletarAlunoPorId.png)
+
+---
 - CRUD Professor
-Captura de tela da requisição criarProfessor 
-![Captura de tela da requisição criarProfessor]
-(/src/assets/CriarProfessor.png)
 
-Captura de tela da requisição listarTodosProfessores 
-![Captura de tela da requisição listarTodosProfessores]
-(src/assets/ListarTodosProfessores.png)
+![CriarProfessor.png](src/assets/CriarProfessor.png)
 
-Captura de tela da requisição buscarProfessorPorId 
-![Captura de tela da requisição buscarProfessorPorId]
-(src/assets/BuscarProfessorPorId.png)
+![ListarTodosProfessores.png](src/assets/ListarTodosProfessores.png)
 
-Captura de tela da requisição atualizarProfessorPorId  
-![Captura de tela da requisição atualizarTodosProfessores]
-(src/assets/AtualizarProfessorPorId.png)
+![BuscarProfessorPorId.png](src/assets/BuscarProfessorPorId.png)
 
-Captura de tela da requisição deletarProfessorPorId 
-![Captura de tela da requisição deletarProfessorPorId]
-(src/assets/DeletarProfessorPorId.png)
+![AtualizarProfessorPorId.png](src/assets/AtualizarProfessorPorId.png)
 
+![DeletarProfessor.png](src/assets/DeletarProfessor.png)
 
+---
 - CRUD Disciplina
-Captura de tela da requisição cadastrarDisciplina
-![Captura de tela da requisição cadastrarDisciplina]
-(/src/assets/CadastrarDisciplina.png)
 
-Captura de tela da requisição listarTodasDisciplinas 
-![Captura de tela da requisição listarTodasDisciplinas]
-(src/assets/ListarTodasDisciplinas.png)
+![CadastrarDisciplina.png](src/assets/CadastrarDisciplina.png)
 
-Captura de tela da requisição buscarDisciplinaPorId 
-![Captura de tela da requisição buscarDisciplinaPorId]
-(src/assets/BuscarDisciplinaPorId.png)
+![ListarTodasDisciplinas.png](src/assets/ListarTodasDisciplinas.png)
 
-Captura de tela da requisição atualizarDisciplinaPorId  
-![Captura de tela da requisição atualizarDisciplinaPorId  ]
-(src/assets/AtualizarDisciplinaPorId  .png)
 
-Captura de tela da requisição deletarDisciplinaPorId 
-![Captura de tela da requisição dedeletarDisciplinaPorId]
-(src/assets/DeletarDisciplinaPorId.png)
+![BuscarDisciplinaPorId.png](src/assets/BuscarDisciplinaPorId.png)
+
+---
 
 - CRUD Matrícula de Aluno
-Captura de tela da requisição criarMatricula
-![Captura de tela da requisição criarMatricula]
-(/src/assets/CriarMatricula.png)
 
-Captura de tela da requisição trancarMatricula
-![Captura de tela da requisição trancarMatricula]
-(src/assets/TrancarMatricula.png)
+![CriarMatricula.png](src/assets/CriarMatricula.png)
 
-Captura de tela da requisição atualizarNotas
-![Captura de tela da requisição atualizarNotas]
-(src/assets/AtualizarNotas.png)
+![TrancarMatricula.png](src/assets/TrancarMatricula.png)
+
+![AtualizarNotas.png](src/assets/AtualizarNotas.png)
+
 ---
 
 ### 🗃️ DBeaver: Estrutura do Banco
@@ -152,7 +116,7 @@ Captura de tela da requisição atualizarNotas
 
 ---
 
-### 📄 Swagger: Documentação
+### 📄 Documentação Swagger
 
 > A API conta com uma interface de documentação interativa através do Swagger.
 
